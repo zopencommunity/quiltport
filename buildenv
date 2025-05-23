@@ -1,7 +1,7 @@
 # Update bump details accordingly. Use bump check to confirm.
 # bump: quilt-version /QUILT_VERSION="(.*)"/ https://git.savannah.nongnu.org/git/quilt.git|semver:*
-# QUILT_VERSION="V.R.M" # Specify a stable release
-# export ZOPEN_STABLE_TAG="v${QUILT_VERSION}"
+ QUILT_VERSION="0.69" # Specify a stable release
+ export ZOPEN_STABLE_TAG="v${QUILT_VERSION}"
 
 ###
 ### Build control file for the quilt port
@@ -66,7 +66,7 @@ zopen_get_version()
 {
   # Modify to echo the version of your tool/library
   # Rather than hardcoding the version, obtain the version by running the tool/library
-  echo "1.0.0"
+  echo $QUILT_VERSION
 }
 
 
