@@ -1,5 +1,5 @@
 # Update bump details accordingly. Use bump check to confirm.
-# bump: quilt-version /QUILT_VERSION="(.*)"/ https://git.savannah.nongnu.org/git/quilt.git|semver:*
+# bump: quilt-version /QUILT_VERSION="(.*)"/ https://download.savannah.gnu.org/releases/quilt/|re:/href="quilt-([\d.]+).tar.gz"/$1/|semver:*
  QUILT_VERSION="0.69" # Specify a stable release
  export ZOPEN_STABLE_TAG="v${QUILT_VERSION}"
 
@@ -15,7 +15,7 @@
 export ZOPEN_BUILD_LINE="STABLE"
 
 ## Required IF ZOPEN_BUILD_LINE='STABLE'
-export ZOPEN_STABLE_URL="https://git.savannah.nongnu.org/git/quilt.git"  # Specify the stable build URL (either git or tarball)
+export ZOPEN_STABLE_URL="https://download.savannah.gnu.org/releases/quilt/quilt-${QUILT_VERSION}.tar.gz"  # Specify the stable build URL (either git or tarball)
 export ZOPEN_STABLE_DEPS="make zoslib grep coreutils diffutils patch findutils perl gawk" # Specify the stable build dependencies.
 ## Required IF ZOPEN_BUILD_LINE='DEV'
 export ZOPEN_DEV_URL="https://git.savannah.nongnu.org/git/quilt.git"   # Specify the dev build URL
