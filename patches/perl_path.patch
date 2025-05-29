@@ -1,0 +1,10 @@
+diff --git a/test/run b/test/run
+index b8fcebc..8fc986b 100755
+--- a/test/run
++++ b/test/run
+@@ -1,4 +1,4 @@
+-#!/usr/bin/perl -w
++#!/usr/bin/env perl -w
+ 
+ # Copyright (c) 2007, 2008 Andreas Gruenbacher.
+ # All rights reserved.
