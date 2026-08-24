@@ -1,0 +1,10 @@
+diff --git a/contrib/spec-filters/obs b/contrib/spec-filters/obs
+index 2f5b169..b675230 100755
+--- a/contrib/spec-filters/obs
++++ b/contrib/spec-filters/obs
+@@ -1,4 +1,4 @@
+-#!/usr/bin/sh
++#!/bin/sh
+ # Basic spec file filter for OBS packages
+ # https://build.opensuse.org/
+ 
